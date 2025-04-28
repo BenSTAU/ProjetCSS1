@@ -1,0 +1,31 @@
+@import "./css/charteGraphique.css";
+@import "../templatePart/composants.css";
+@import "../templatePart/header.css";
+@import "../templatePart/footer.css";
+*{
+    margin: 0;
+    padding: 0;
+    }
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/about-bg-5.jpg);
+    background-size: contain
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    padding: 10vh 10vh 5vh 10vh;
+    /* width: 70%; */
+
+}
+section img{
+    box-shadow: 10px 10px rgb(228, 225, 225);
+    width: 30rem;
+    border-radius: 5px;
+
+}
+.textDisplayLeft{
+    width: 30rem;
+}

@@ -1,0 +1,170 @@
+@import "./css/charteGraphique.css";
+@import "../templatePart/composants.css";
+@import "../templatePart/header.css";
+@import "../templatePart/footer.css";
+
+header{
+    height:90vh
+}
+#upcomingEvents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#citationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#citationContainer img{
+    scale: 0.5;
+}
+#citationContainer div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#citationContainer>div p:last-child{
+    font-size: 1rem ;
+}
+#citationContainer div p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans";
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#cell{
+    width: 154px;
+}
+#upcomingEvents{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 7rem;
+    padding-bottom: 7rem;
+}
+#upcomingEvents > :nth-child(2) {
+    margin-bottom: 1.5rem;
+}
+#events{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ #exploreTheWorld{
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.58)), url(./css/image/section-bg-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 65vh;
+    color: #ffffff;
+}
+
+#exploreTheWorld div p{
+    width: 70%;
+
+}
+#cell2{
+    width: 50%;
+}
+
+
+#tourSectionFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-wrap: wrap;
+}
+#toursSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 66%;
+}
+
+.imageHome{
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    gap: 1rem;
+}
+.imageHome img{
+    border-radius: 5px;
+}
+
+#tourSection > div{
+    width: 19rem;
+}
+#textDisplayHome{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    width: 23rem;
+}
+
+@media(max-width: 1200px) {
+
+    #events{
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    header{
+    }
+    #cell2 {
+         display: none;
+    }
+    #toursSection{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+}
+@media (max-width: 650px){
+    #citationContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+    #cell{
+        display: none;
+    }
+    #exploreTheWorld{
+        height: auto;
+        padding-top: 10vh ;
+        padding-bottom: 10vh;
+    }
+    #textDisplayHome{
+        align-items: center;
+        text-align: center;
+    }
+    .imageHome {
+        width: 90%;
+    }
+    header {
+        height: 60vh;
+    }
+    
+    header section {
+        gap: 0.5rem;
+    }
+    
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}

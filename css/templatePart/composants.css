@@ -1,0 +1,76 @@
+:root{
+    --color-cta: #FB2056;
+    --color-cta-hover: #DA1C4B;
+}
+.cta {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Noto Sans";
+    background-color: var(--color-cta);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: var(--color-cta-hover);
+}
+
+.separator {
+    height: 2px;
+    width: 60px ;
+    background-color: var(--color-cta);
+}
+
+
+
+
+.imageDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 40%;
+    text-align: center;
+}
+.imageDisplay img{
+    width: 90%;
+    box-shadow: 10px 10px rgb(228, 225, 225);
+    margin-bottom: 1rem;
+}
+.imageDisplay p{
+    width: 88%;
+}
+
+
+
+
+
+.textDisplayLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+@media (max-width:1200px){
+    .imageDisplay {
+        width: 60%;
+    }
+    .textDisplayLeft {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media (max-width: 650px) {
+    .imageDisplay {
+        width: 80%;
+    }
+}
