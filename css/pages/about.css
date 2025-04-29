@@ -2,22 +2,20 @@
 @import "../templatePart/composants.css";
 @import "../templatePart/header.css";
 @import "../templatePart/footer.css";
-*{
-    margin: 0;
-    padding: 0;
-    }
+
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/about-bg-5.jpg);
-    background-size: contain
+    background-size: auto;
+    }
+main {
+    padding-bottom: 5vh;
 }
-
 section{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10vh;
     padding: 10vh 10vh 5vh 10vh;
-    /* width: 70%; */
 
 }
 section img{
@@ -28,4 +26,39 @@ section img{
 }
 .textDisplayLeft{
     width: 30rem;
+}
+@media(max-width: 1200px) {
+    section{
+        flex-direction: column;
+        
+    }
+    .textDisplayLeft{
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+@media (max-width: 650px) {
+    header {
+        height: 30vh;
+        background-size: 200%;
+    }
+
+    header section {
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    section{
+        padding: 10vh 5vh 5vh 5vh;
+    }
+    .textDisplayLeft {
+        width: 100%;
+    }
+    section img{
+        width: 100%;
+    }
+
 }

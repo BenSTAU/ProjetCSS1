@@ -87,7 +87,8 @@ header h3{
 @media (max-width: 650px) {
     header {
         height: 60vh;
-        background-position: center;
+        background-size: 280%;
+        background-position: top center;
     }
 
     header section {

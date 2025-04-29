@@ -1,0 +1,9 @@
+@import "./css/charteGraphique.css";
+@import "../templatePart/composants.css";
+@import "../templatePart/header.css";
+@import "../templatePart/footer.css";
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/project-background.jpg);
+    background-size: auto;
+}

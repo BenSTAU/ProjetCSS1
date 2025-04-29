@@ -1,0 +1,87 @@
+@import "./css/charteGraphique.css";
+@import "../templatePart/composants.css";
+@import "../templatePart/header.css";
+@import "../templatePart/footer.css";
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/services-bg.jpg);
+    background-size: auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+}
+
+#services article div{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0
+}
+
+#listes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20vh;
+    gap: 4rem;
+}
+.textDisplayLeft {
+    width: 30rem;
+    text-align: left;
+}
+
+
+@media(max-width: 1200px){
+    #services{
+        width: 100%;
+    }
+    #services article div{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #listes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+    .textDisplayLeft{
+        align-items: flex-start;
+    }
+
+}
+@media (max-width: 650px) {
+    header {
+        height: 30vh;
+        background-size: 200%;
+    }
+
+    header section {
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    main{
+        padding: 5vh;
+    }
+    .textDisplayLeft{
+        width: 100%;
+    }
+
+}
