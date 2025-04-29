@@ -42,12 +42,24 @@ h5{
     font-family: var(--font-nav);
     font-size: 1.1rem;
 }
+h6{
+    font-family: var(--font-nav);
+    font-size: 1rem;
+}
 p{
     font-family: var(--font-body);
     font-size: 1rem;
 }
 main{
     background-color: #F5F5F5 ;
+}
+form input,textarea{
+    font-family: var(--font-body);
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+form input{
+    height: 2rem;
 }
 
 @media (max-width: 1280px) {

@@ -6,6 +6,7 @@
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/about-bg-5.jpg);
     background-size: auto;
+    height: 570px ;
     }
 main {
     padding-bottom: 5vh;
@@ -27,6 +28,7 @@ section img{
 .textDisplayLeft{
     width: 30rem;
 }
+
 @media(max-width: 1200px) {
     section{
         flex-direction: column;

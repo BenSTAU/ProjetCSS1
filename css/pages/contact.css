@@ -1,0 +1,73 @@
+@import "./css/charteGraphique.css";
+@import "../templatePart/composants.css";
+@import "../templatePart/header.css";
+@import "../templatePart/footer.css";
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/about-bg-2.jpg);
+    background-size: auto;
+    height: 570px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+    padding: 5vh;
+}
+section button{
+    align-self: flex-start;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#logoContactBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#logoContact{
+    display: flex;
+}
+#logoContact button {
+    background-color: var(--color-cta);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    scale:0.8;
+}
+#logoContact button img{
+    scale: 0.5;
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 30vh;
+        background-size: 200%;
+    }
+    
+    header section {
+        gap: 0.5rem;
+    }
+    
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 10vh;
+    }
+}
+

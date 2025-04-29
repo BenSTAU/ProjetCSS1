@@ -6,23 +6,22 @@
 header{
     height:90vh
 }
-#upcomingEvents{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+/* Section citation */
+
 #citationContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#citationContainer img{
-    scale: 0.5;
+    padding-top: 5vh;
 }
 #citationContainer div{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+#citationContainer img{
+    width:  100px;
 }
 #citationContainer>div p:last-child{
     font-size: 1rem ;
@@ -39,11 +38,15 @@ header{
 }
 
 #cell{
-    width: 154px;
+    width: 100px;
 }
+
+/* Section prochains évènements */
+
 #upcomingEvents{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     margin-top: 7rem;
     padding-bottom: 7rem;
@@ -58,6 +61,7 @@ header{
     align-items: center;
 }
 
+/* Section Explore The World */
 
  #exploreTheWorld{
     display: flex;
@@ -75,7 +79,11 @@ header{
 #cell2{
     width: 50%;
 }
+.textDisplayLeft{
+    width: 50%;
+}
 
+/* Section Prochaines destinations */
 
 #tourSectionFlex{
     display: flex;
@@ -93,6 +101,10 @@ header{
     width: 66%;
 }
 
+#tourSection > div{
+    width: 19rem;
+}
+
 .imageHome{
     display: flex;
     flex-direction: column;
@@ -103,9 +115,6 @@ header{
     border-radius: 5px;
 }
 
-#tourSection > div{
-    width: 19rem;
-}
 #textDisplayHome{
     display: flex;
     flex-direction: column;
@@ -117,42 +126,34 @@ header{
 
 @media(max-width: 1200px) {
 
+    /* Section prochains évènements */
+
     #events{
         flex-direction: column;
         gap: 2rem;
         width: 100%;
     }
+
+    /* Section Explore The World */
+
     #cell2 {
          display: none;
     }
+    .textDisplayLeft{
+        width: 100%;
+    }
+
+    /* Section Prochaines destinations */
+
     #toursSection{
         flex-direction: column;
         align-items: center;
         
     }
 
-
 }
 @media (max-width: 650px){
-    #citationContainer{
-        flex-direction: column;
-        text-align: center;
-    }
-    #cell{
-        display: none;
-    }
-    #exploreTheWorld{
-        height: auto;
-        padding-top: 10vh ;
-        padding-bottom: 10vh;
-    }
-    #textDisplayHome{
-        align-items: center;
-        text-align: center;
-    }
-    .imageHome {
-        width: 90%;
-    }
+
     header {
         height: 60vh;
     }
@@ -164,5 +165,33 @@ header{
     header h1 {
         text-align: center;
         font-size: 2rem;
+    }
+
+    /* Section citation */
+
+    #citationContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+    #cell{
+        display: none;
+    }
+
+    /* Section Explore The World */
+    
+    #exploreTheWorld{
+        height: auto;
+        padding-top: 10vh ;
+        padding-bottom: 10vh;
+    }
+
+    /* Section Prochaines destinations */
+
+    #textDisplayHome{
+        align-items: center;
+        text-align: center;
+    }
+    .imageHome {
+        width: 90%;
     }
 }

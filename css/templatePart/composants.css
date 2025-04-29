@@ -26,13 +26,12 @@
 }
 
 
-
+/* Design image avec texte en dessous */
 
 .imageDisplay {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1.5rem;
     width: 40%;
     text-align: center;
@@ -46,11 +45,10 @@
 .imageDisplay p{
     width: 88%;
 }
-.separator2 {
-    height: 2px;
-    width: 20px;
-    background-color: var(--color-cta);
-}
+
+
+
+/* Design texte comprenant une liste */
 
 .liste {
     display: flex;
@@ -62,6 +60,13 @@
     justify-content: flex-start;
     gap: 2rem;
 }
+.separator2 {
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-cta);
+}
+
+/*  Design texte affiché à gauche avec titre et contenu en dessous */
 
 .textDisplayLeft{
     display: flex;

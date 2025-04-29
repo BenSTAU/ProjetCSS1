@@ -6,6 +6,7 @@
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/services-bg.jpg);
     background-size: auto;
+    height: 570px;
 }
 main{
     display: flex;
@@ -24,10 +25,14 @@ main{
     width: 70%;
 }
 
+#services article{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 #services article div{
     display: flex;
-    justify-content: center;
-    padding: 2rem 0
+    justify-content: space-around;
 }
 
 #listes {
