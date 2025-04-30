@@ -26,7 +26,6 @@ header {
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.58)), url(./image/hero-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     

@@ -50,4 +50,13 @@ section article img{
         text-align: center;
         font-size: 2rem;
     }
+    section{
+        padding: 2rem 0;
+    }
+    section article img{
+        width: 45%;
+    }
+    section article>:last-child{
+        display: none;
+    }
 }

@@ -55,6 +55,7 @@ form{
     
     header section {
         gap: 0.5rem;
+        padding: 0;
     }
     
     header h1 {
@@ -64,6 +65,7 @@ form{
     main{
         flex-direction: column;
     }
+
     section{
         width: 100%;
         padding: 0;

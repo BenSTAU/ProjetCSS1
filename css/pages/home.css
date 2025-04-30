@@ -173,6 +173,7 @@ header{
     #citationContainer{
         flex-direction: column;
         text-align: center;
+        gap:2rem;
     }
     #cell{
         display: none;
