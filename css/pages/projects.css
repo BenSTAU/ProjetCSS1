@@ -1,10 +1,10 @@
-@import "./css/charteGraphique.css";
+@import "../templatePart/charteGraphique.css";
 @import "../templatePart/composants.css";
 @import "../templatePart/header.css";
 @import "../templatePart/footer.css";
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./css/image/project-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../image/bg/project-bg.jpg);
     background-size: auto;
     height: 570px;
 }
