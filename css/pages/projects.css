@@ -1,12 +1,10 @@
 @import "../templatePart/charteGraphique.css";
 @import "../templatePart/composants.css";
-@import "../templatePart/header.css";
+@import "../templatePart/headerOtherPages.css";
 @import "../templatePart/footer.css";
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../image/bg/project-bg.jpg);
-    background-size: auto;
-    height: 570px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../image/bg/projectBg.jpg);
 }
 main{
     display: flex;
@@ -37,19 +35,6 @@ section article img{
     border-radius: 5px;
 }
 @media (max-width: 650px) {
-    header {
-        height: 30vh;
-        background-size: 200%;
-    }
-        
-    header section {
-        gap: 0.5rem;
-    }
-        
-    header h1 {
-        text-align: center;
-        font-size: 2rem;
-    }
     section{
         padding: 2rem 0;
     }

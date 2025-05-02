@@ -50,11 +50,11 @@
 
 /* Design texte comprenant une liste */
 
-.liste {
+.list {
     display: flex;
     flex-direction: column;
 }
-.listeLigne{
+.listLigne{
     display: flex;
     align-items: center;
     justify-content: flex-start;

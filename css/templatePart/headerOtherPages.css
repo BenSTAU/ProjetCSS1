@@ -1,24 +1,18 @@
-@import "../templatePart/charteGraphique.css";
-@import "../templatePart/composants.css";
-@import "../templatePart/header.css";
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
 }
-
 button {
     background: none;
     border: none;
     cursor: pointer;
     font-weight: 500;
 }
-
 a {
     color: #ffffff;
 }
@@ -26,20 +20,18 @@ a {
 
 
 header {
-    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.58)), url(./css/image/hero-bg.jpg);
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
-
+    height: 570px;
+    
 
 }
-
-header nav {
+header nav{
     position: absolute;
     top: 0;
     height: 5rem;
@@ -50,31 +42,26 @@ header nav {
     align-items: center;
     font-family: "Montserrat";
     font-weight: 500;
-}
-
-header nav ul {
+    }
+header nav ul{
     display: flex;
     gap: 2rem;
     align-items: center;
 }
-
 header section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap:  1.5rem;
 
 }
-
 header section button {
     margin-top: 1.5rem;
 }
-
 header h1 {
     color: #ffffff;
 }
-
-header h3 {
+header h3{
     color: #ffffff;
 }
 
@@ -82,43 +69,51 @@ header h3 {
     display: none;
     font-size: 2rem;
     color: #ffffff;
-    background-color: var(--color-cta);
+    cursor: pointer;
+    background-color: #FB2056;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 5px;
 }
 
 .burgerNav {
     display: none;
     gap: 1rem;
     top: 5rem;
+    right: 0;
     position: absolute;
     background-color: #DA1C4BDD;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-.burgerNavOuvert {
-    display: flex;
-    
-}
+
+
 @media (max-width: 1200px) {
-    header nav ul {
+    header nav ul{
         display: none;
     }
-
     .burger-menu {
         display: block;
     }
-
+    .burgerNavOuvert {
+         display: flex;
+    
+    }
 }
 @media (max-width: 650px) {
     header {
-        height: 60vh;
-        background-size: 280%;
+        height: 30vh;
+        background-size: 200%;
         background-position: top center;
     }
 
     header section {
         gap: 0.5rem;
+    }
+    header nav{
+        width: 90%;
     }
 
     header h1 {

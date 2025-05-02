@@ -1,23 +1,21 @@
 @import "../templatePart/charteGraphique.css";
 @import "../templatePart/composants.css";
-@import "../templatePart/header.css";
+@import "../templatePart/headerOtherPages.css";
 @import "../templatePart/footer.css";
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../image/bg/contact-bg.jpg);
-    background-size: auto;
-    height: 570px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../image/bg/contactBg.jpg);
 }
 main{
     display: flex;
     justify-content: center;
     padding: 10vh;
 }
-section{
+main section{
     display: flex;
     flex-direction: column;
     width: 40%;
-    gap: 2rem;
+    gap: 1rem;
     padding: 5vh;
 }
 section button{
@@ -48,20 +46,6 @@ form{
 }
 
 @media (max-width: 650px) {
-    header {
-        height: 30vh;
-        background-size: 200%;
-    }
-    
-    header section {
-        gap: 0.5rem;
-        padding: 0;
-    }
-    
-    header h1 {
-        text-align: center;
-        font-size: 2rem;
-    }
     main{
         flex-direction: column;
     }
