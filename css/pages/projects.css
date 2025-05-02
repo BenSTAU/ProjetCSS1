@@ -18,8 +18,8 @@ section{
     gap: 3rem;
     justify-content: center;
     width: 75%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 #titre {
     display: flex;

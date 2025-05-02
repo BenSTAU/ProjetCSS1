@@ -30,8 +30,6 @@
     align-items: center;
     font-family: "Noto Sans";
     font-size: 1.2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
 
 #cell{
@@ -45,8 +43,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 #upcomingEvents > :nth-child(2) {
     margin-bottom: 1.5rem;
@@ -69,7 +67,7 @@
     color: #ffffff;
 }
 
-#exploreTheWorld div p{
+#exploreTheWorld article p{
     width: 70%;
     
 }
@@ -86,8 +84,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
     flex-wrap: wrap;
 }
 #tourSectionFlex article {

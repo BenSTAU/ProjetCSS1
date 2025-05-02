@@ -67,7 +67,7 @@ header h3{
     color: #ffffff;
 }
 
-.burger-menu {
+.burgerMenu {
     display: none;
     font-size: 2rem;
     color: #ffffff;
@@ -79,7 +79,7 @@ header h3{
 
 .burgerNav {
     display: none;
-    gap: 1rem;
+    gap: 0.8rem;
     top: 5rem;
     right: 0;
     position: absolute;
@@ -96,7 +96,7 @@ header h3{
     header nav ul{
         display: none;
     }
-    .burger-menu {
+    .burgerMenu {
         display: block;
     }
     .burgerNavOuvert {

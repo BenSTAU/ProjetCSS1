@@ -9,14 +9,14 @@ header {
 main{
     display: flex;
     justify-content: center;
-    padding: 10vh;
+    padding: var(--section-padding);
+    gap: var(--section-padding);
 }
 main section{
     display: flex;
     flex-direction: column;
     width: 40%;
     gap: 1rem;
-    padding: 5vh;
 }
 section button{
     align-self: flex-start;
